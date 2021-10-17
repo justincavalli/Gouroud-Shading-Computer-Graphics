@@ -1,0 +1,3 @@
+# Gouroud Shading
+This program outputs an image of a triangle in which the three secondary colors bleed towards the center from the vertices, as an example of gouroud shading and linear interpolation. The program loops through all the pixels within the triangle and calculates barycentric coordinates, using CalcBarycentric(), based on the pixel’s positioning on the triangle in relation to the vertices defined earlier. Using the barycentric coordinates and the RGB values of the vertices we do a linear interpolation, using interpolate(), to calculate what the RGB should be for this given pixel. Since it’s all based on its positioning in relation to the vertices it looks like the three
+colors are bleeding/fading into each other from the three vertex points.
